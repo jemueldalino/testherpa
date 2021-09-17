@@ -34329,8 +34329,13 @@
             i = !1,
             o = void 0;
           try {
-            for (var a, s = e[Symbol.iterator](); !(n = (a = s.next()).done) && (r.push(a.value), !t || r.length !== t); n = !0)
-          } catch (e) {
+            for (
+              var a, 
+              s = e[Symbol.iterator](); 
+              !(n = (a = s.next()).done) && (r.push(a.value), !t || r.length !== t); n = !0
+            ){}
+          }
+          catch (e) {
             i = !0, o = e
           } finally {
             try {
@@ -35116,7 +35121,9 @@
           value: function (e, t, r, n, i) {
             var o = "".concat("https://sherpa-widget-sandbox.joinsherpa.io"),
               a = null;
-            null != e ? a = "orders/".concat(e) : null != t && (a = "applications/products/".concat(t)), o = "".concat(o, "/").concat(a, "?nationality=").concat(r), o += "&runningInIframe=true", o += "&language=".concat(i), n && (s = n.join("&"), o = "".concat(o, "&").concat(s));
+            null != e ? a = "orders/".concat(e) : null != t && (a = "applications/products/".concat(t)), 
+              o = "".concat(o, "/").concat(a, "?nationality=").concat(r), o += "&runningInIframe=true", 
+              o += "&language=".concat(i), n && (s = n.join("&"), o = "".concat(o, "&").concat(s));
             var s = I.getAffiliateId();
             s && (o = "".concat(o, "&affiliateId=").concat(s));
             s = I.getPlacement();
